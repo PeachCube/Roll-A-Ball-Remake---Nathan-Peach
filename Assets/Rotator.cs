@@ -5,13 +5,9 @@ using UnityEngine;
 
 public class Rotator : MonoBehaviour
 {
-    void Start()
+    public float rotationSpeed = 60;
+    private void Update()
     {
-        StartCoroutine(Rotor());
-    }
-    IEnumerator Rotor()
-    {
-        transform.Rotate(new Vector3(0, 0, 90), Space.World);
-        yield return new WaitForSeconds(3); 
+        transform.Rotate(new Vector3(0, rotationSpeed, 0) * Time.deltaTime);
     }
 }
