@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Death Plane
+  - spawn
   layers:
   - Default
   - TransparentFX
