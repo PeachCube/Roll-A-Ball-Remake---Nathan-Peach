@@ -6,11 +6,11 @@ public class CameraController : MonoBehaviour
 {
     public GameObject Player;
     private Vector3 offset;
-    private Vector3 manualRotation;
+    //private Vector3 manualRotation;
     void Start()
     {
         offset = transform.position - Player.transform.position;
-        manualRotation.y = -90;
+        //manualRotation.y = -90;
     }
     void LateUpdate()
     {
