@@ -13,7 +13,7 @@ public class DoorTrigger : MonoBehaviour
     }
     private void OnTriggerEnter(Collider player)
     {
-        Door1.transform.Translate((Door1.transform.position + Vector3.back) * Time.deltaTime);
-        Door2.transform.Translate((Door2.transform.position + Vector3.forward) * Time.deltaTime);
+        Door1.transform.Translate(new Vector3(0,0,1.35f));
+        Door2.transform.Translate(new Vector3(0,0,-1.35f));
     }
 }
