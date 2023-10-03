@@ -180,3 +180,5 @@ MonoBehaviour:
   jumpStrength: 7.5
   rb: {fileID: 1649507651171151892}
   speed: 10
+  scoreCount: {fileID: 0}
+  diamond: {fileID: 2857185195959972841, guid: d91a2e87effa0a449ad884faf40238f7, type: 3}

@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Start Menu.unity
     guid: 22319a6bc42dedc43a2935d8f2ad08aa
   - enabled: 1
-    path: Assets/Level 1 (Tutorial).unity
+    path: Assets/Level 0 (Tutorial).unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Level 2.unity
+    path: Assets/Level 1.unity
     guid: 25dd44f8867ef1c429cdf4049782066a
   m_configObjects: {}

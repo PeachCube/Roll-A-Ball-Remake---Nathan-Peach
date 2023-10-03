@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 146340486967808159}
   m_Layer: 0
   m_Name: Hexagon Tile
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -684,57 +684,9 @@ MonoBehaviour:
   m_Mesh: {fileID: 0}
   m_VersionIndex: 88
   m_IsSelectable: 1
-  m_SelectedFaces: 13000000100000000f0000000e0000001200000011000000
-  m_SelectedEdges:
-  - a: 81
-    b: 80
-  - a: 80
-    b: 82
-  - a: 82
-    b: 83
-  - a: 83
-    b: 81
-  - a: 69
-    b: 68
-  - a: 68
-    b: 70
-  - a: 70
-    b: 71
-  - a: 71
-    b: 69
-  - a: 65
-    b: 64
-  - a: 64
-    b: 66
-  - a: 66
-    b: 67
-  - a: 67
-    b: 65
-  - a: 61
-    b: 60
-  - a: 60
-    b: 62
-  - a: 62
-    b: 63
-  - a: 63
-    b: 61
-  - a: 77
-    b: 76
-  - a: 76
-    b: 78
-  - a: 78
-    b: 79
-  - a: 79
-    b: 77
-  - a: 73
-    b: 72
-  - a: 72
-    b: 74
-  - a: 74
-    b: 75
-  - a: 75
-    b: 73
-  m_SelectedVertices: 5200000051000000500000005300000046000000450000004400000047000000420000004100000040000000430000003e0000003d0000003c0000003f0000004e0000004d0000004c0000004f0000004a00000049000000480000004b000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!114 &3998504759529855426
 MonoBehaviour:
   m_ObjectHideFlags: 0
