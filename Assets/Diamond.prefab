@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1832092646961330530}
   m_Layer: 0
   m_Name: Diamond
-  m_TagString: Untagged
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1356,4 +1356,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 7024591497739618893, guid: eca44dfafbe5f5f4b8e711c6956357fa, type: 3}
-  score: 0

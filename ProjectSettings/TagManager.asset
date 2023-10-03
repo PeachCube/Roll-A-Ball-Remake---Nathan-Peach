@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Death Plane
   - spawn
+  - Diamond
   layers:
   - Default
   - TransparentFX

@@ -12,10 +12,9 @@ public class Controller : MonoBehaviour
     private float movementX;
     private float movementY;
     public float speed = 0;
-    public TextMeshProUGUI scoreDisplay;
+    public TextMeshProUGUI scoreDisplay;//I tried to have this reference the "ScoreDisplay" gameobject but it doesn't seem to work if both objects are prefabs, so I have to reassign this on each level
     private bool jumping = false;
     private int score;
-    public GameObject diamond;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -46,10 +45,13 @@ public class Controller : MonoBehaviour
     {
         jumping = false;
     }
-    private void OnTriggerEnter(Collider diamond)
+    private void OnTriggerEnter(Collider other)
     {
-        score = score + 1;
-        SetScoreCount();
+        if (other.CompareTag("Diamond"))
+        {
+            score = score + 1;
+            SetScoreCount();
+        }
     }
     void SetScoreCount()
     {
