@@ -11,7 +11,7 @@ public class Controller : MonoBehaviour
     public Rigidbody rb;
     private float movementX;
     private float movementY;
-    public float speed = 0;
+    public float speed = 10;
     public TextMeshProUGUI scoreDisplay;//I tried to have this reference the "ScoreDisplay" gameobject but it doesn't seem to work if both objects are prefabs, so I have to reassign this on each level
     private bool jumping = false;
     private int score;
