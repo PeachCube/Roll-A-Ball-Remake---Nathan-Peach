@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XR;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 public class Controller : MonoBehaviour
 {
     public float jumpStrength = 10;
@@ -15,11 +17,13 @@ public class Controller : MonoBehaviour
     public TextMeshProUGUI scoreDisplay;//I tried to have this reference the "ScoreDisplay" gameobject but it doesn't seem to work if both objects are prefabs, so I have to reassign this on each level
     private bool jumping = false;
     private int score;
+    public InstantDeath dead;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         score = 0;
         SetScoreCount();
+        dead = GetComponent<InstantDeath>();
     }
     void OnMove(InputValue movementValue)
     {
@@ -57,4 +61,12 @@ public class Controller : MonoBehaviour
     {
         scoreDisplay.text = "Score: " + score.ToString();
     }
+    private void Restart()
+    {
+        if (dead == true)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
 }
+

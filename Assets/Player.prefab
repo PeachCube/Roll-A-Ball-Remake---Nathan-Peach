@@ -183,6 +183,7 @@ MonoBehaviour:
   rb: {fileID: 1649507651171151892}
   speed: 12
   scoreDisplay: {fileID: 0}
+  dead: {fileID: 1013079068237770272, guid: e582d5128c95bfc4ba62b27a81ed9896, type: 3}
 --- !u!114 &2557169075832803280
 MonoBehaviour:
   m_ObjectHideFlags: 0
