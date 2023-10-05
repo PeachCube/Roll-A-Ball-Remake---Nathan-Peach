@@ -28,7 +28,7 @@ public class DoorTrigger : MonoBehaviour
         //translates the doors each iteration.
         //IEnumerator and yield return null so "OnTriggerEnter" activates each frame until the "for" loop expires.
         //once the loop expires, set the trigger to detect the player to inactive.
-        for(float open = 0; open <= 80; open = open + 0.25f)
+        for(float open = 0; open <= 120; open = open + 0.25f)
         {
             Door1.transform.Translate(new Vector3(0, 0, 2) * Time.deltaTime);
             Door2.transform.Translate(new Vector3(0, 0, -2) * Time.deltaTime);
