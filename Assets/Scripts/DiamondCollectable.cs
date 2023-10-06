@@ -9,7 +9,7 @@ public class DiamondCollectable : MonoBehaviour
     private float min;
     void Start()
     {
-        max = gameObject.transform.position.y + 0.25f;
+        max = gameObject.transform.position.y + 0.45f;
         min = gameObject.transform.position.y;
     }
 
@@ -17,7 +17,7 @@ public class DiamondCollectable : MonoBehaviour
     {
         gameObject.transform.Rotate(new Vector3(0,60,0)*Time.deltaTime);
         //rotates each diamond by 60 degrees in the y-axis * Time.deltaTime every frame
-        transform.position = new Vector3(transform.position.x, Mathf.PingPong(Time.time*0.2f, max-min)+min, transform.position.z);
+        transform.position = new Vector3(transform.position.x, Mathf.PingPong(Time.time*0.35f, max-min)+min, transform.position.z);
         //moves every diamond up and down within a set range. The transform of x and z stays the same, while the y value uses a function to return a fluctuating value based on time.
         //I used a similar script in my Ballshooter remix, but it didn't work correctly, so I salvaged it to reuse it here, and I guess it works now. shrug.
     }
