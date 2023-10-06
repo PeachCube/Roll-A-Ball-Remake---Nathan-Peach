@@ -18,7 +18,6 @@ public class EndLevel : MonoBehaviour
     }
     private void OnTriggerEnter(Collider player)
     {
-        // This only loads the level immediately after the tutorial for now.
-        SceneManager.LoadScene(2);
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
